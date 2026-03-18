@@ -210,24 +210,10 @@ header nav .nav-link {
 .hero-title, .hero-sub, .hero-btns { opacity: 0; }
 
 /* Carousel controls - thin white arrows */
-.hero-carousel .carousel-control-prev-icon,
-.hero-carousel .carousel-control-next-icon {
-  filter: drop-shadow(0 1px 3px rgba(0,0,0,.5));
-}
 .hero-carousel .carousel-control-prev,
-.hero-carousel .carousel-control-next {
-  width: 48px;
-}
-
-/* Indicators */
-.hero-carousel .carousel-indicators [data-bs-target] {
-  width: 28px; height: 3px; border-radius: 2px;
-  background-color: rgba(255,255,255,0.55);
-  border: none;
-  transition: background-color .3s;
-}
-.hero-carousel .carousel-indicators .active {
-  background-color: var(--primary-color);
+.hero-carousel .carousel-control-next,
+.hero-carousel .carousel-indicators {
+  display: none;
 }
     .services .fa-3x {
       transition: transform 0.3s ease;

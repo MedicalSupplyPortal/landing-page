@@ -58,7 +58,7 @@ WSGI_APPLICATION = 'medicalsp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/tmp/db.sqlite3',  # /tmp is writable on Vercel
+        'NAME': os.getenv('DB_PATH', os.path.join(BASE_DIR, 'db.sqlite3')),
     }
 }
 

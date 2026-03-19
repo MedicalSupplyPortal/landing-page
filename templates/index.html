@@ -3,17 +3,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Medical Portal | Digital Supply Chain for Medical Sector</title>
+
+  <!-- Primary SEO -->
+  <title>Medical Supply Portal | Digital Medical Supply Chain — Saudi Arabia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="keywords" content="Medical Supplies, Logistics, Consultancy, Training">
-  <meta name="description" content="Medical Portal: Integrated Digital Supply Chain for the Medical Sector">
+  <meta name="description" content="Medical Supply Portal is Saudi Arabia's leading digital supply chain platform connecting healthcare providers with certified medical suppliers. Fast, reliable, and compliant procurement for hospitals, clinics, and distributors.">
+  <meta name="keywords" content="medical supply portal, medical supplies Saudi Arabia, healthcare procurement, medical equipment KSA, surgical supplies, digital supply chain, certified medical suppliers, hospital supplies, medical devices Saudi Arabia, pharmaceutical procurement">
+  <meta name="author" content="Medical Supply Portal">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.medicalsupplyportal.com/">
+
+  <!-- Open Graph (Facebook / LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.medicalsupplyportal.com/">
+  <meta property="og:title" content="Medical Supply Portal | Digital Medical Supply Chain — Saudi Arabia">
+  <meta property="og:description" content="Connect with certified medical suppliers across Saudi Arabia. Streamline procurement for hospitals, clinics, and healthcare organizations with Medical Supply Portal.">
+  <meta property="og:image" content="https://www.medicalsupplyportal.com/static/image/android-chrome-512x512.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Medical Supply Portal">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.medicalsupplyportal.com/">
+  <meta name="twitter:title" content="Medical Supply Portal | Digital Medical Supply Chain — Saudi Arabia">
+  <meta name="twitter:description" content="Connect with certified medical suppliers across Saudi Arabia. Fast, reliable, and compliant procurement for healthcare providers.">
+  <meta name="twitter:image" content="https://www.medicalsupplyportal.com/static/image/android-chrome-512x512.png">
+
+  <!-- Geo targeting -->
+  <meta name="geo.region" content="SA">
+  <meta name="geo.country" content="Saudi Arabia">
+  <meta name="language" content="English">
 
   <link rel="icon" type="image/x-icon" href="{% static 'image/android-chrome-512x512.png' %}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'style.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
@@ -526,19 +551,29 @@ html {
 .nav-cta {
   background: transparent;
   color: var(--primary-color) !important;
-  border: 2px solid var(--primary-color);
-  border-radius: 25px;
+  border: none;
   padding: .38rem 1.2rem !important;
   font-size: .85rem !important;
   font-weight: 600 !important;
-  transition: background .22s, color .22s, transform .15s !important;
+  transition: color .22s, transform .15s !important;
 }
 .nav-cta:hover {
-  background: #e0f2fb !important;
-  color: var(--primary-color) !important;
+  color: var(--primary-dark) !important;
   transform: translateY(-1px);
 }
 .nav-cta::after { display: none !important; }
+.btn-shop-now {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 25px;
+  transition: background .22s, transform .18s, box-shadow .22s;
+}
+.btn-shop-now:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,119,204,.35);
+}
 
 body { padding-top: 0; }
 
@@ -777,6 +812,112 @@ body { padding-top: 0 !important; }
 
 </style>
 
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.medicalsupplyportal.com/#organization",
+        "name": "Medical Supply Portal",
+        "url": "https://www.medicalsupplyportal.com/",
+        "logo": "https://www.medicalsupplyportal.com/static/image/android-chrome-512x512.png",
+        "description": "Saudi Arabia's leading digital supply chain platform connecting healthcare providers with certified medical suppliers.",
+        "email": "medicalsupplyportalksa@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "SA",
+          "addressRegion": "Saudi Arabia"
+        },
+        "sameAs": [
+          "https://www.medicalsupplyportal.com/"
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Saudi Arabia"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.medicalsupplyportal.com/#website",
+        "url": "https://www.medicalsupplyportal.com/",
+        "name": "Medical Supply Portal",
+        "publisher": { "@id": "https://www.medicalsupplyportal.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.medicalsupplyportal.com/#webpage",
+        "url": "https://www.medicalsupplyportal.com/",
+        "name": "Medical Supply Portal | Digital Medical Supply Chain — Saudi Arabia",
+        "description": "Connect with certified medical suppliers across Saudi Arabia. Streamline procurement for hospitals, clinics, and healthcare organizations.",
+        "isPartOf": { "@id": "https://www.medicalsupplyportal.com/#website" },
+        "about": { "@id": "https://www.medicalsupplyportal.com/#organization" }
+      },
+      {
+        "@type": "Service",
+        "name": "Medical Supply Procurement Platform",
+        "provider": { "@id": "https://www.medicalsupplyportal.com/#organization" },
+        "serviceType": "Healthcare Supply Chain",
+        "description": "Digital procurement platform for medical supplies, surgical equipment, pharmaceuticals, and laboratory products in Saudi Arabia.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Saudi Arabia"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Hospitals, Clinics, Healthcare Organizations, Medical Distributors"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Medical Supply Portal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Medical Supply Portal is Saudi Arabia's leading digital supply chain platform that connects healthcare providers — including hospitals, clinics, and medical organizations — with certified medical suppliers for fast and reliable procurement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What medical supplies can I find on Medical Supply Portal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Medical Supply Portal offers a wide range of certified medical products including surgical supplies, medical devices, pharmaceuticals, laboratory equipment, diagnostic tools, patient care products, and more — all sourced from verified suppliers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Medical Supply Portal available in Saudi Arabia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Medical Supply Portal is based in Saudi Arabia and primarily serves healthcare providers and medical suppliers across the Kingdom of Saudi Arabia and the wider GCC region."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I contact Medical Supply Portal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can reach Medical Supply Portal by emailing medicalsupplyportalksa@gmail.com or by filling out the enquiry form at www.medicalsupplyportal.com."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the suppliers on Medical Supply Portal verified?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all suppliers listed on Medical Supply Portal are verified and certified. The platform upholds strict quality and regulatory compliance standards to ensure every product meets healthcare requirements."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
 </head>
 <body>
 
@@ -801,24 +942,18 @@ body { padding-top: 0 !important; }
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#specialities">Specialities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#suppliers">Suppliers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
           <li class="nav-item ms-2">
             <a class="nav-link nav-cta" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-sm px-3 fw-bold btn-shop-now" href="https://www.medicalsupplyportal.com/" target="_blank" rel="noopener">Shop Now</a>
           </li>
         </ul>
       </nav>
 
       <!-- Mobile actions -->
       <div class="d-flex d-lg-none align-items-center ms-auto gap-2">
-        {% if user.is_authenticated %}
-          <a href="{% url 'profile' %}" class="msh-icon" title="Account" aria-label="Account">
-            <i class="bi bi-person"></i>
-          </a>
-        {% else %}
-          <a href="" class="msh-icon" title="Account" aria-label="Account">
-            <i class="bi bi-person"></i>
-          </a>
-        {% endif %}
         <button class="msh-icon border-0 bg-transparent" type="button"
                 data-bs-toggle="collapse" data-bs-target="#mshMobileMenu"
                 aria-controls="mshMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -834,8 +969,9 @@ body { padding-top: 0 !important; }
         <a class="msh-mobile-link" href="#about"><i class="fas fa-info-circle"></i>About</a>
         <a class="msh-mobile-link" href="#services"><i class="fas fa-concierge-bell"></i>Services</a>
         <a class="msh-mobile-link" href="#specialities"><i class="fas fa-stethoscope"></i>Specialities</a>
-        <a class="msh-mobile-link" href="#suppliers"><i class="fas fa-boxes"></i>Suppliers</a>
+        <a class="msh-mobile-link" href="#testimonials"><i class="fas fa-comment-dots"></i>Testimonials</a>
         <a class="msh-mobile-link" href="#contact"><i class="fas fa-envelope"></i>Contact Us</a>
+        <a class="msh-mobile-link fw-bold" href="https://www.medicalsupplyportal.com/" target="_blank" rel="noopener" style="color:var(--primary-color)!important;"><i class="fas fa-shopping-cart"></i>Shop Now</a>
       </div>
     </div>
 
@@ -882,11 +1018,11 @@ body { padding-top: 0 !important; }
       <div class="hero-overlay" style="background:rgba(0,10,30,0.62);"></div>
       <div class="container hero-content">
         <div style="max-width:680px;">
-          <h1 class="hero-title fw-normal mb-3" style="font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.35;color:#fff;">
+          <h2 class="hero-title fw-normal mb-3" style="font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.35;color:#fff;">
             Verified Suppliers &amp;
             <br class="d-none d-md-block">
             <span style="color:#00e8a0;">Certified</span> Medical Products
-          </h1>
+          </h2>
           <p class="hero-sub mb-4" style="font-size:1rem;color:rgba(255,255,255,0.88);max-width:600px;">
             Connect with trusted manufacturers and distributors through a single,
             reliable procurement platform built for healthcare.
@@ -904,11 +1040,11 @@ body { padding-top: 0 !important; }
       <div class="hero-overlay" style="background:rgba(0,10,30,0.45);"></div>
       <div class="container hero-content">
         <div style="max-width:680px;">
-          <h1 class="hero-title fw-normal mb-3" style="font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.35;color:#fff;">
+          <h2 class="hero-title fw-normal mb-3" style="font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.35;color:#fff;">
             Training, Consultancy &amp;
             <br class="d-none d-md-block">
             <span style="color:#00c47e;">Expert</span> Advisory Services
-          </h1>
+          </h2>
           <p class="hero-sub mb-4" style="font-size:1rem;color:rgba(255,255,255,0.88);max-width:600px;">
             Structured learning programs and strategic advisory services to streamline
             supply chains and optimise medical procurement.
@@ -1024,6 +1160,19 @@ body { padding-top: 0 !important; }
     object-fit: cover;
     border-radius: 16px;
   }
+  #aboutImgCarousel .carousel-item:first-child img {
+    object-fit: contain;
+    background: #f4f8fd;
+  }
+  @media (max-width: 768px) {
+    #aboutImgCarousel .carousel-item img {
+      height: 240px;
+    }
+    #aboutImgCarousel .carousel-item:first-child img {
+      object-fit: contain;
+      height: 220px;
+    }
+  }
 </style>
 
 <!-- About Section -->
@@ -1037,13 +1186,13 @@ body { padding-top: 0 !important; }
           <div id="aboutImgCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner" style="border-radius:16px;overflow:hidden;">
               <div class="carousel-item active">
-                <img src="{% static 'image/about.png' %}" alt="About 1">
+                <img src="{% static 'image/about.png' %}" alt="Medical Supply Portal — digital procurement platform for healthcare providers in Saudi Arabia">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'image/about2.jpg' %}" alt="About 2">
+                <img src="{% static 'image/about2.jpg' %}" alt="Certified medical supplies and equipment sourced through Medical Supply Portal KSA">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'image/about3.jpg' %}" alt="About 3">
+                <img src="{% static 'image/about3.jpg' %}" alt="Healthcare professionals using Medical Supply Portal for streamlined medical procurement">
               </div>
             </div>
           </div>
@@ -1384,7 +1533,7 @@ body { padding-top: 0 !important; }
 
     <!-- Swiper wrapper + nav row -->
     <div class="d-flex align-items-center gap-3" data-aos="fade-up">
-      <button class="spec-swiper-btn" id="specPrev" aria-label="Previous">
+      <button class="spec-swiper-btn d-none" id="specPrev" aria-label="Previous">
         <i class="fas fa-chevron-left"></i>
       </button>
 
@@ -1554,7 +1703,7 @@ body { padding-top: 0 !important; }
         <div class="swiper-pagination mt-3" style="position:relative;bottom:auto;margin-top:1rem;"></div>
       </div><!-- /.swiper -->
 
-      <button class="spec-swiper-btn" id="specNext" aria-label="Next">
+      <button class="spec-swiper-btn d-none" id="specNext" aria-label="Next">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
@@ -1593,198 +1742,168 @@ body { padding-top: 0 !important; }
 {% endblock %}
 
 
-<!-- Supplier Section -->
+<!-- Testimonials Section -->
 <style>
-  .supplier-card {
+  .testi-card {
     background: #fff;
-    border-radius: 12px;
-    padding: 1.2rem 1rem;
-    box-shadow: 0 2px 10px rgba(0,43,91,.07);
+    border-radius: 14px;
+    padding: 1.8rem 1.6rem;
+    box-shadow: 0 2px 14px rgba(0,43,91,.08);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
+    gap: 1rem;
     height: 100%;
     transition: transform .25s, box-shadow .25s;
   }
-  .supplier-card:hover {
+  .testi-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0,161,214,.15);
+    box-shadow: 0 10px 28px rgba(0,119,204,.13);
   }
-  .supplier-logo-circle {
-    width: 56px;
-    height: 56px;
+  .testi-quote {
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1;
+  }
+  .testi-text {
+    font-size: .88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    flex: 1;
+  }
+  .testi-avatar {
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #fff;
     flex-shrink: 0;
   }
-  .supplier-name {
-    font-size: .82rem;
+  .testi-name {
+    font-size: .88rem;
     font-weight: 600;
-    color: #002B5B;
-    text-align: center;
-    line-height: 1.3;
+    color: var(--text-color);
   }
-  .supplier-tag {
-    font-size: .7rem;
-    color: #00a1d6;
-    font-weight: 500;
-  }
-  .supplierSwiper .swiper-wrapper { align-items: stretch; }
-  .supplierSwiper .swiper-slide { height: auto; }
+
+  .testi-stars { color: #f4a261; font-size: .85rem; }
+  .testiSwiper .swiper-wrapper { align-items: stretch; }
+  .testiSwiper .swiper-slide { height: auto; }
 </style>
 
-<section class="py-5 sec-alt" id="suppliers" style="font-family:'Poppins',sans-serif;">
+<section class="py-5 sec-alt" id="testimonials" style="font-family:'Poppins',sans-serif;">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
-      <span class="sec-label">Trusted Partners</span>
-      <h2 style="color:var(--text-color);font-weight:600;font-size:2rem;">Our Verified Suppliers</h2>
+      <span class="sec-label">What They Say</span>
+      <h2 style="color:var(--text-color);font-weight:600;font-size:2rem;">Client Testimonials</h2>
       <div class="heading-bar"></div>
-      <p style="color:var(--text-muted);font-size:.92rem;">Partnering with trusted and certified medical suppliers for seamless procurement.</p>
+      <p style="color:var(--text-muted);font-size:.92rem;">Trusted by healthcare providers and medical organizations across the region.</p>
     </div>
 
     <div class="d-flex align-items-center gap-3" data-aos="fade-up">
-      <button class="spec-swiper-btn" id="supPrev" aria-label="Previous">
+      <button class="spec-swiper-btn d-none" id="testiPrev" aria-label="Previous">
         <i class="fas fa-chevron-left"></i>
       </button>
 
-      <div class="swiper supplierSwiper" style="flex:1;overflow:hidden;">
+      <div class="swiper testiSwiper" style="flex:1;overflow:hidden;">
         <div class="swiper-wrapper">
 
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#0077b6;">ME</div>
-            <div class="supplier-name">MedEquip Arabia</div>
-            <div class="supplier-tag">Medical Devices</div>
+          <div class="swiper-slide"><div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <p class="testi-text">Medical Supply Portal transformed how we manage procurement. We reduced order processing time by 40% in just two months.</p>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="d-flex align-items-center gap-2 mt-auto">
+              <div class="testi-avatar" style="background:#0077b6;">AH</div>
+              <div>
+                <div class="testi-name">Ahmed Al-Harbi</div>
+              </div>
+            </div>
           </div></div>
 
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#2a9d8f;">HS</div>
-            <div class="supplier-name">HealthSource KSA</div>
-            <div class="supplier-tag">Surgical Supplies</div>
+          <div class="swiper-slide"><div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <p class="testi-text">The platform's supplier verification gives us full confidence. Every product we receive meets our strict quality standards.</p>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="d-flex align-items-center gap-2 mt-auto">
+              <div class="testi-avatar" style="background:#2a9d8f;">SA</div>
+              <div>
+                <div class="testi-name">Sara Al-Amri</div>
+              </div>
+            </div>
           </div></div>
 
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#e76f51;">PM</div>
-            <div class="supplier-name">PharmaLink Medical</div>
-            <div class="supplier-tag">Pharmaceuticals</div>
+          <div class="swiper-slide"><div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <p class="testi-text">Outstanding support team and an intuitive portal. We now source all our surgical supplies through Medical Supply Portal.</p>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="d-flex align-items-center gap-2 mt-auto">
+              <div class="testi-avatar" style="background:#6a4c93;">KM</div>
+              <div>
+                <div class="testi-name">Khalid Mohammed</div>
+              </div>
+            </div>
           </div></div>
 
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#457b9d;">NC</div>
-            <div class="supplier-name">NovaCare Gulf</div>
-            <div class="supplier-tag">Patient Care</div>
+          <div class="swiper-slide"><div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <p class="testi-text">Real-time inventory tracking and seamless delivery coordination have made our clinic run more efficiently than ever before.</p>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="d-flex align-items-center gap-2 mt-auto">
+              <div class="testi-avatar" style="background:#e76f51;">LN</div>
+              <div>
+                <div class="testi-name">Layla Nasser</div>
+              </div>
+            </div>
           </div></div>
 
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#6a4c93;">AM</div>
-            <div class="supplier-name">AlMedica Supply</div>
-            <div class="supplier-tag">Lab Equipment</div>
+          <div class="swiper-slide"><div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <p class="testi-text">The digital supply chain solution is a game-changer. We've cut costs and improved delivery accuracy across all our facilities.</p>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="d-flex align-items-center gap-2 mt-auto">
+              <div class="testi-avatar" style="background:#457b9d;">OM</div>
+              <div>
+                <div class="testi-name">Omar Al-Mutairi</div>
+              </div>
+            </div>
           </div></div>
 
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#f4a261;">BH</div>
-            <div class="supplier-name">BioHealth Arabia</div>
-            <div class="supplier-tag">Diagnostics</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#2d6a4f;">GS</div>
-            <div class="supplier-name">Gulf Surgicals</div>
-            <div class="supplier-tag">OR Equipment</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#c77dff;">MP</div>
-            <div class="supplier-name">MedPro Distributors</div>
-            <div class="supplier-tag">General Supplies</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#ef233c;">RC</div>
-            <div class="supplier-name">RedCross MedTech</div>
-            <div class="supplier-tag">Emergency Products</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#023e8a;">SI</div>
-            <div class="supplier-name">Saudi Imaging Co.</div>
-            <div class="supplier-tag">Radiology</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#40916c;">DH</div>
-            <div class="supplier-name">DentalHub KSA</div>
-            <div class="supplier-tag">Dental Supplies</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#f77f00;">OT</div>
-            <div class="supplier-name">OptiTech Medical</div>
-            <div class="supplier-tag">Ophthalmology</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#7b2d8b;">RM</div>
-            <div class="supplier-name">RehabMed Gulf</div>
-            <div class="supplier-tag">Rehabilitation</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#0096c7;">CL</div>
-            <div class="supplier-name">ClinLab Arabia</div>
-            <div class="supplier-tag">Laboratory</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#d62828;">IC</div>
-            <div class="supplier-name">ICU Systems KSA</div>
-            <div class="supplier-tag">Critical Care</div>
-          </div></div>
-
-          <div class="swiper-slide"><div class="supplier-card">
-            <div class="supplier-logo-circle" style="background:#386641;">WC</div>
-            <div class="supplier-name">WoundCare Direct</div>
-            <div class="supplier-tag">Wound Management</div>
+          <div class="swiper-slide"><div class="testi-card">
+            <div class="testi-quote">&ldquo;</div>
+            <p class="testi-text">Exceptional platform with a wide range of certified suppliers. The compliance features alone make it worth every riyal.</p>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="d-flex align-items-center gap-2 mt-auto">
+              <div class="testi-avatar" style="background:#2d6a4f;">FA</div>
+              <div>
+                <div class="testi-name">Fatima Al-Rashidi</div>
+              </div>
+            </div>
           </div></div>
 
         </div><!-- /.swiper-wrapper -->
-        <div class="swiper-pagination supplier-pagination mt-3" style="position:relative;bottom:auto;margin-top:1rem;"></div>
+        <div class="swiper-pagination testi-pagination mt-3" style="position:relative;bottom:auto;margin-top:1.2rem;"></div>
       </div><!-- /.swiper -->
 
-      <button class="spec-swiper-btn" id="supNext" aria-label="Next">
+      <button class="spec-swiper-btn d-none" id="testiNext" aria-label="Next">
         <i class="fas fa-chevron-right"></i>
-      </button> 
-    </div>
-
-    <div class="text-center mt-4">
-      <a href="https://www.medicalsupplyportal.com/supplier/" target="_blank"
-         class="btn px-4 py-2"
-         style="background-color:#00a1d6;color:#fff;border-radius:8px;font-weight:500;font-size:.95rem;">
-        View All Suppliers &rarr;
-      </a>
+      </button>
     </div>
   </div>
 </section>
 
 <script>
-  new Swiper('.supplierSwiper', {
-    slidesPerView: 2,
-    spaceBetween: 16,
+  new Swiper('.testiSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
     loop: true,
-    autoplay: { delay: 2000, disableOnInteraction: false },
-    pagination: { el: '.supplier-pagination', clickable: true },
-    navigation: { nextEl: '#supNext', prevEl: '#supPrev' },
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    pagination: { el: '.testi-pagination', clickable: true },
+    navigation: { nextEl: '#testiNext', prevEl: '#testiPrev' },
     breakpoints: {
-      576: { slidesPerView: 3, spaceBetween: 18 },
-      768: { slidesPerView: 4, spaceBetween: 20 },
-      992: { slidesPerView: 5, spaceBetween: 22 },
-      1200: { slidesPerView: 6, spaceBetween: 24 },
+      768: { slidesPerView: 2, spaceBetween: 22 },
+      1200: { slidesPerView: 3, spaceBetween: 24 },
     }
   });
 </script>
@@ -1976,20 +2095,6 @@ body { padding-top: 0 !important; }
 
 
 <!-- Contact Section -->
-<style>
-  .role-toggle-btn {
-    border: 1.5px solid #00a1d6;
-    color: #00a1d6;
-    background: #fff;
-    font-weight: 500;
-    transition: background .2s, color .2s;
-  }
-  .btn-check:checked + .role-toggle-btn {
-    background: #00a1d6;
-    color: #fff;
-    border-color: #00a1d6;
-  }
-</style>
 <section class="py-5 sec-white" id="contact" style="font-family:'Poppins',sans-serif;">
   <div class="container">
 
@@ -1997,7 +2102,7 @@ body { padding-top: 0 !important; }
       <span class="sec-label">Get In Touch</span>
       <h2 style="color:var(--text-color);font-weight:600;font-size:2rem;">Send Us an Enquiry</h2>
       <div class="heading-bar"></div>
-      <p style="color:var(--text-muted);font-size:.92rem;">Whether you're a healthcare buyer or a medical supplier, we'd love to hear from you.</p>
+      <p style="color:var(--text-muted);font-size:.92rem;">Have a question or need assistance? We'd love to hear from you.</p>
     </div>
 
     <div class="row g-4 justify-content-center" data-aos="fade-up">
@@ -2005,19 +2110,14 @@ body { padding-top: 0 !important; }
       <!-- Info cards -->
       <div class="col-lg-4 d-flex flex-column gap-3">
         <div class="p-4 bg-white rounded-4 shadow-sm text-center">
-          <i class="fas fa-hospital-alt fa-2x mb-2" style="color:#00a1d6;"></i>
-          <h6 style="color:#002B5B;font-weight:600;">Healthcare Buyers</h6>
-          <p class="text-muted small mb-0">Hospitals, clinics &amp; organizations — find verified medical suppliers and product solutions.</p>
-        </div>
-        <div class="p-4 bg-white rounded-4 shadow-sm text-center">
-          <i class="fas fa-boxes fa-2x mb-2" style="color:#00a1d6;"></i>
-          <h6 style="color:#002B5B;font-weight:600;">Medical Suppliers</h6>
-          <p class="text-muted small mb-0">Manufacturers &amp; distributors — partner with us to showcase products and reach buyers.</p>
+          <i class="fas fa-headset fa-2x mb-2" style="color:var(--primary-color);"></i>
+          <h6 style="color:#002B5B;font-weight:600;">We're Here to Help</h6>
+          <p class="text-muted small mb-0">Whether it's a product question, partnership inquiry, or general support — reach out and our team will respond promptly.</p>
         </div>
         <div class="p-4 bg-white rounded-4 shadow-sm">
-          <p class="small mb-1"><i class="fas fa-envelope me-2" style="color:#00a1d6;"></i>medicalsupplyportalksa@gmail.com</p>
-          <p class="small mb-1"><i class="fas fa-globe me-2" style="color:#00a1d6;"></i>www.medicalsupplyportal.com</p>
-          <p class="small mb-0"><i class="fas fa-map-marker-alt me-2" style="color:#00a1d6;"></i>Saudi Arabia</p>
+          <p class="small mb-2"><i class="fas fa-envelope me-2" style="color:var(--primary-color);"></i>medicalsupplyportalksa@gmail.com</p>
+          <p class="small mb-2"><i class="fas fa-globe me-2" style="color:var(--primary-color);"></i>www.medicalsupplyportal.com</p>
+          <p class="small mb-0"><i class="fas fa-map-marker-alt me-2" style="color:var(--primary-color);"></i>Saudi Arabia</p>
         </div>
       </div>
 
@@ -2025,23 +2125,10 @@ body { padding-top: 0 !important; }
       <div class="col-lg-7">
         <div class="p-4 p-md-5 bg-white rounded-4 shadow-sm">
 
-          <!-- Success / Error alert -->
           <div id="contactAlert" class="alert d-none mb-3" role="alert"></div>
 
           <form id="enquiryForm" novalidate>
             {% csrf_token %}
-
-            <!-- Role toggle -->
-            <div class="mb-4 d-flex gap-2">
-              <input type="radio" class="btn-check" name="role" id="roleBuyer" value="Buyer" checked>
-              <label class="btn flex-fill role-toggle-btn" for="roleBuyer">
-                <i class="fas fa-hospital-alt me-1"></i> I'm a Buyer
-              </label>
-              <input type="radio" class="btn-check" name="role" id="roleSupplier" value="Supplier">
-              <label class="btn flex-fill role-toggle-btn" for="roleSupplier">
-                <i class="fas fa-boxes me-1"></i> I'm a Supplier
-              </label>
-            </div>
 
             <div class="row g-3">
               <div class="col-sm-6">
@@ -2054,7 +2141,7 @@ body { padding-top: 0 !important; }
               </div>
               <div class="col-sm-6">
                 <label class="form-label small fw-500" style="color:#002B5B;">Phone Number</label>
-                <input type="tel" name="phone" class="form-control" placeholder="+966 5X XXX XXXX">
+                <input type="tel" name="phone" class="form-control" placeholder="+1 234 567 8900">
               </div>
               <div class="col-sm-6">
                 <label class="form-label small fw-500" style="color:#002B5B;">Subject</label>
@@ -2067,7 +2154,7 @@ body { padding-top: 0 !important; }
               <div class="col-12">
                 <button type="submit" id="enquirySubmitBtn"
                   class="btn w-100 py-2"
-                  style="background:#00a1d6;color:#fff;border-radius:8px;font-weight:500;font-size:.95rem;">
+                  style="background:var(--primary-color);color:#fff;border-radius:8px;font-weight:500;font-size:.95rem;">
                   <span id="enquiryBtnText"><i class="fas fa-paper-plane me-2"></i>Send Enquiry</span>
                   <span id="enquirySpinner" class="d-none spinner-border spinner-border-sm" role="status"></span>
                 </button>
@@ -2107,7 +2194,6 @@ document.getElementById('enquiryForm').addEventListener('submit', function(e) {
   spinner.classList.remove('d-none');
 
   const data = new FormData(form);
-  data.set('role', form.querySelector('input[name="role"]:checked').value);
 
   fetch("{% url 'contact_enquiry' %}", { method: 'POST', body: data })
     .then(r => r.json())
@@ -2172,7 +2258,7 @@ document.getElementById('enquiryForm').addEventListener('submit', function(e) {
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#specialities">Specialities</a></li>
-          <li><a href="#suppliers">Suppliers</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
